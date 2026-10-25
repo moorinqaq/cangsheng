@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>苍生之下 · 六派设定集</title>
+<meta name="description" content="苍生之下：六大门派、众生炉与祟。世界观设定集。">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="canonical" href="https://xingmilu.xyz/">
+<meta name="theme-color" content="#100d0b">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="苍生之下">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="苍生之下 · 六派设定集">
+<meta property="og:description" content="六大门派、众生炉与祟。修士的每一次破境，都有人在底下替他付账。">
+<meta property="og:url" content="https://xingmilu.xyz/">
+<meta property="og:image" content="https://xingmilu.xyz/assets/art/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="众生朝皇城与那口井">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="苍生之下 · 六派设定集">
+<meta name="twitter:description" content="六大门派、众生炉与祟。">
+<meta name="twitter:image" content="https://xingmilu.xyz/assets/art/og.jpg">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top"><b>苍生之下</b><span>六派设定集</span></a>
+  <nav>
+    <ul>
+      <li><a href="#world">世界观</a></li>
+      <li><a href="#story">故事背景</a></li>
+      <li><a href="#sects">六大门派</a></li>
+      <li><a href="#sui">祟</a></li>
+      <li><a href="#outside">六派之外</a></li>
+    </ul>
+  </nav>
+  <button class="audio-btn" id="audio-btn" aria-pressed="false" title="声音">
+    <span class="dot"></span><span class="lbl">声</span>
+  </button>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="hero-bg"><img src="assets/art/story.jpg" alt=""></div>
+  <div class="hero-veil"></div>
+  <div class="hero-inner">
+    <img class="hero-title" src="assets/art/title.png" alt="苍生之下">
+    <p class="hero-sub">六 大 门 派 · 众 生 炉 · 一 口 井</p>
+    <img class="hero-couplet" src="assets/art/couplet.png" alt="井底有光封未启，人间无梦不曾收">
+  </div>
+  <div class="scroll-hint">向 下</div>
+</section>
+
+<!-- ================= 世界观 ================= -->
+<section id="world">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>世界观</h2>
+      <p class="note">三层天地，一条灵机循环。<br>修士的每一次破境，都有人在底下替他付账。</p>
+    </div>
+
+    <div class="world-grid" id="layers"></div>
+
+    <div class="cycle">
+      <div class="ring" id="ring">
+        <svg viewBox="-18 -10 436 420" xmlns="http://www.w3.org/2000/svg" aria-label="灵机循环示意">
+          <defs>
+            <radialGradient id="cglow" cx="50%" cy="50%" r="50%">
+              <stop offset="0" stop-color="#c8a24a" stop-opacity=".16"/>
+              <stop offset="1" stop-color="#c8a24a" stop-opacity="0"/>
+            </radialGradient>
+            <marker id="arw" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+              <path d="M0 0 L10 5 L0 10 z" fill="#c8a24a" fill-opacity=".8"/>
+            </marker>
+          </defs>
+          <circle cx="200" cy="200" r="170" fill="url(#cglow)"/>
+          <g class="spin">
+            <circle cx="200" cy="200" r="128" fill="none" stroke="#c8a24a" stroke-opacity=".42" stroke-width="1.1"/>
+            <circle cx="200" cy="200" r="86" fill="none" stroke="#c8a24a" stroke-opacity=".22" stroke-width="1" stroke-dasharray="2 7"/>
+            <g fill="none" stroke="#c8a24a" stroke-opacity=".8" stroke-width="1.4" marker-end="url(#arw)">
+              <path d="M200 62 A 138 138 0 0 1 320 200"/>
+              <path d="M320 200 A 138 138 0 0 1 200 338"/>
+              <path d="M200 338 A 138 138 0 0 1 80 200"/>
+              <path d="M80 200 A 138 138 0 0 1 200 62"/>
+            </g>
+          </g>
+          <g font-family="STSong,SimSun,serif" text-anchor="middle" fill="#a2957f" font-size="10.5" letter-spacing="1.5">
+            <text x="300" y="106">六十年一次</text>
+            <text x="300" y="304">提纯</text>
+            <text x="100" y="304">收尘念</text>
+            <text x="100" y="106">道骸归土</text>
+          </g>
+          <g class="nodes">
+            <g class="node" data-i="0" data-tip="天穹之上每六十年倒灌一次灵潮，灵气自天而降、落点不均。六域的灵机厚薄，本质是“这次落在谁头上”。">
+              <circle cx="200" cy="44" r="42" fill="transparent"/>
+              <text x="200" y="40" font-family="STKaiti,KaiTi,serif" font-size="19" text-anchor="middle">灵潮</text>
+            </g>
+            <g class="node" data-i="1" data-tip="六条主灵脉分踞六方，六派各据其一。六脉交汇于中州昆吾山下——交汇处灵气散尽，反而成了凡境。">
+              <circle cx="366" cy="204" r="42" fill="transparent"/>
+              <text x="366" y="210" font-family="STKaiti,KaiTi,serif" font-size="19" text-anchor="middle">灵脉</text>
+            </g>
+            <g class="node" data-i="2" data-tip="亿万凡人聚居之地，不知修真。他们的生老病死、祈愿、姓名、苦厄，被接引阵抽走，化作灵机。">
+              <circle cx="200" cy="360" r="42" fill="transparent"/>
+              <text x="200" y="366" font-family="STKaiti,KaiTi,serif" font-size="19" text-anchor="middle">凡境</text>
+            </g>
+            <g class="node" data-i="3" data-tip="六脉交汇处，六座接引阵在此汇成一座炉。凡人死时执念未了，怨就沉在炉底——怨重成祟。">
+              <circle cx="34" cy="204" r="42" fill="transparent"/>
+              <text x="34" y="210" font-family="STKaiti,KaiTi,serif" font-size="19" text-anchor="middle">众生炉</text>
+            </g>
+          </g>
+          <circle cx="200" cy="200" r="15" fill="none" stroke="#c8a24a" stroke-opacity=".35"/>
+          <circle cx="200" cy="200" r="4" fill="#c8a24a"/>
+          <text x="200" y="188" text-anchor="middle" font-size="11" fill="#c8a24a"
+                font-family="STSong,SimSun,serif" letter-spacing="4">灵机</text>
+        </svg>
+      </div>
+      <div class="ring-side">
+        <div class="bgimg on" id="ring-bg"></div>
+        <h3 id="ring-title">灵机循环</h3>
+        <p id="ring-text">凡人活着，就会产生“尘念”——愿、名、苦、惧。六派在凡境各处布下接引阵，把尘念抽入灵脉，提纯为灵机；修士吸纳灵机而强；修士死后，“道骸”归土，反过来滋养凡境。闭环。</p>
+        <p class="ring-hint">将鼠标移到环上的名词，此处会换成对应的解释。</p>
+      </div>
+    </div>
+
+    <figure class="bleed reveal">
+      <img src="assets/art/royal-city.jpg" alt="众生朝皇城与地宫井口">
+      <figcaption>众生朝 · 昆吾山脚的皇城。城心那口井，六根石柱分镇六方，井底就是众生炉。</figcaption>
+    </figure>
+
+    <div class="readings-head reveal">
+      <h3>「苍生之下」六解</h3>
+      <p>同一句谶语，六种读法——这六种解法，就是六个门派。</p>
+    </div>
+    <div class="readings" id="readings"></div>
+  </div>
+</section>
+
+<!-- ================= 画廊 ================= -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>画廊</h2>
+      <p class="note">六派的人物与地界，众生朝的城与炉。<br>自动翻页，也可手动。</p>
+    </div>
+    <div class="gallery" id="gallery-box">
+      <div class="g-stage" id="g-stage"></div>
+      <button class="g-nav prev" id="g-prev" aria-label="上一张">‹</button>
+      <button class="g-nav next" id="g-next" aria-label="下一张">›</button>
+      <div class="g-dots" id="g-dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 故事背景 ================= -->
+<section id="story">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>故事背景</h2>
+      <p class="note">灵力不是天上掉的。<br>是从凡人身上收上来的。</p>
+    </div>
+    <figure class="bleed reveal">
+      <img src="assets/art/story.jpg" alt="灵潮自天而降，六脉汇聚于皇城">
+      <figcaption>甲子灵潮 · 六道灵脉自六方汇聚，落进皇城中心那口井。</figcaption>
+    </figure>
+
+    <div class="story-body">
+      <div class="story-col reveal">
+        <h3>灵潮与六脉</h3>
+        <p>天穹之上，每六十年倒灌一次灵潮。灵气自天而降，落点不均——六域的灵机厚薄，本质是“这次落在谁头上”。</p>
+        <p>六条主灵脉分踞六方，六派各据其一。六脉交汇于中州昆吾山下，交汇处灵气散尽，反而成了凡境。</p>
+        <h3>众生炉</h3>
+        <p>凡人活着，就会产生尘念：愿、名、苦、惧。六派在凡境布下接引阵，把尘念抽入灵脉，提纯为灵机；修士死后，道骸归土，又反过来滋养凡境。这是一条闭环。</p>
+        <p>六脉交汇处，六座接引阵汇成一座炉。凡人王朝“众生朝”就建在炉上，皇室世代守着一口不许打开的井——凡人以为那是龙脉，其实是炉的排气口。</p>
+      </div>
+      <div class="story-col reveal">
+        <h3>八百年</h3>
+        <p>六派之间八百年没有公开战争。灵机配额每年在众生朝坐下来分，撕破脸对谁都不划算；六派又互相咬合——军械、机甲、兽皮、药、镇邪、送葬，缺一样，别家的日子都难过。</p>
+        <p>于是斗争全部转到水下：炉工、无名者、时间。三条暗线，谁都不说破。</p>
+        <h3>第七脉</h3>
+        <p>六条灵脉之下，还有第七条——属于凡人自己的灵脉。它被六派共同封印，封印就在皇城那口井下面。</p>
+        <p>“苍生之下”的真正含义，不是“苍生在下”，而是“苍生之下还有一条脉”。六派共用这句谶语八百年，没有人敢说出后半句。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 六大门派 ================= -->
+<section id="sects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>六大门派</h2>
+      <p class="note">六派分踞六方，无高下之分。<br>点开任一门派，读它的信条、派系与地界。</p>
+    </div>
+    <div class="sect-grid" id="sect-grid"></div>
+  </div>
+</section>
+
+<!-- ================= 祟 ================= -->
+<section id="sui">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>祟</h2>
+      <p class="note">众生炉不只收灵机，也收怨。<br>怨重则成祟。</p>
+    </div>
+    <figure class="bleed reveal">
+      <img src="assets/art/sui.jpg" alt="炉底的邪祟">
+      <figcaption>炉底 · 怨气凝成的人形，眼窝里有暗红的火。</figcaption>
+    </figure>
+    <div class="duo">
+      <div class="reveal">
+        <h3>无实体的祟</h3>
+        <p>灵魂体，附着在凡人或不入流的修士身上，放大其执念。它打不中，只能“劝”——找出被附身的人，驱离，或超度。</p>
+        <h3>有实体的祟</h3>
+        <p>积怨太久，逃出炉外，吸灵气与上界怨气长成的东西。有形体、有弱点、有阶段，是真正要正面打的东西。</p>
+      </div>
+      <div class="reveal">
+        <h3>执念从哪来</h3>
+        <p>凡间战乱、修道无门、被仇人所杀横死——这三种死法最多，也最凶。所以祟最密的地方不是荒野，是战场、是乱世、是那些“本可以不死”的人身边。</p>
+        <h3>为什么没人管</h3>
+        <p>当年每个门派都会派人去众生炉净化怨灵，一年一轮。几百年下来，六派渐渐忘了“为什么去”，只记得“要去”——轮值成了形式，看管松了，炉底的东西开始往外跑。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 六派之外 ================= -->
+<section id="outside">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>六派之外</h2>
+      <p class="note">六大流派只是可供选择的门派，不是世界的全部。<br>野外还有散修、小门派，与三条不被承认的路。</p>
+    </div>
+    <figure class="bleed reveal">
+      <img src="assets/art/outside.jpg" alt="荒野中的邪修小寨">
+      <figcaption>山谷 · 邪修的小寨。蛊罐挂在檐下，人形傀儡立在阶前。</figcaption>
+    </figure>
+    <div class="duo">
+      <div class="reveal">
+        <h3>散修与小门派</h3>
+        <p>野外还有大量散修与小门派，同样遵循天地灵力的晋升法则——一样要炼气、筑基、结丹，一样要怕天劫。区别只在“灵机从哪来”：六派靠接引阵与配额，小门派靠地脉与香火。</p>
+        <p>还有一些，靠人。</p>
+      </div>
+      <div class="reveal">
+        <h3>三条不被承认的路</h3>
+        <p><b>杀人吸灵</b>　直接杀修士或凡人，抽其灵机与生气。进境极快，但灵机驳杂，极易入魔、易招祟。</p>
+        <p><b>养蛊反哺</b>　以蛊虫吸人兽精华，再反哺自身。蛊会反噬，身上长虫，寿元被蛊吃。</p>
+        <p><b>炼傀</b>　将人炼作灵傀、将兽炼作兽傀，驱使其战斗。傀会记得自己是谁，偶尔不听令。</p>
+        <p class="muted">六派明面上追杀，暗地里有人买他们的东西。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>苍生之下 · 六派设定集</div>
+    <div>世界观 ｜ 六大门派 ｜ 祟 ｜ 六派之外</div>
+    <div>画风：中式 · 玄幻 · 古风</div>
+  </div>
+</footer>
+
+<!-- ================= SHEET ================= -->
+<div class="sheet" id="sheet" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="scrim"></div>
+  <button class="close" aria-label="关闭">关闭 ✕</button>
+  <div class="panel">
+    <div class="d-hero">
+      <div class="art" id="d-art"></div>
+      <div class="shade"></div>
+      <div class="head">
+        <h2 id="d-name"></h2>
+        <div class="cp" id="d-cp"></div>
+        <div class="creed" id="d-creed"></div>
+      </div>
+    </div>
+
+    <div class="d-body">
+      <div class="d-top">
+        <div class="d-portrait" id="d-portrait"></div>
+        <div class="d-lead">
+          <p class="one" id="d-one"></p>
+          <div class="d-meta" id="d-meta"></div>
+          <div class="tabs">
+        <button data-tab="p" class="on">两流派</button>
+        <button data-tab="a">门派特色</button>
+        <button data-tab="b">四派系</button>
+        <button data-tab="c">地理 · 建筑</button>
+        <button data-tab="d">人文 · 关系</button>
+          </div>
+        </div>
+      </div>
+      <div class="pane on" id="pane-p"></div>
+      <div class="pane" id="pane-a"></div>
+      <div class="pane" id="pane-b"></div>
+      <div class="pane" id="pane-c"></div>
+      <div class="pane" id="pane-d"></div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
